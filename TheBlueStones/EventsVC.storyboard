@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--EventsVC-->
+        <scene sceneID="2UN-op-P30">
+            <objects>
+                <viewController storyboardIdentifier="eventsVC" id="JYv-nd-hwR" customClass="EventsVC" customModule="TheBlueStones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vY1-Gw-P1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZTe-yh-FvO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cjw-2v-Pyg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-1l-TTf">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhT-2A-tzH">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="61" id="Oci-gQ-K6b"/>
+                                            <constraint firstAttribute="height" constant="29" id="gFf-VX-WUg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.073163581539999994" green="0.28542301930000002" blue="0.71398237180000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="JYv-nd-hwR" eventType="touchUpInside" id="82t-lD-gMw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtr-73-fet">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="sdf-vE-hkI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.41877632009999999" green="0.42453926279999998" blue="0.39973659989999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Jtr-73-fet" firstAttribute="top" secondItem="DMo-1l-TTf" secondAttribute="top" constant="22" id="8WV-np-PbM"/>
+                                    <constraint firstAttribute="height" constant="58" id="HGA-Ts-rRp"/>
+                                    <constraint firstItem="Jtr-73-fet" firstAttribute="leading" secondItem="bhT-2A-tzH" secondAttribute="trailing" constant="16" id="Mz2-Bm-8zb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jtr-73-fet" secondAttribute="trailing" constant="73" id="S40-hA-gxK"/>
+                                    <constraint firstAttribute="bottom" secondItem="bhT-2A-tzH" secondAttribute="bottom" constant="1" id="lRd-jM-Ugb"/>
+                                    <constraint firstItem="bhT-2A-tzH" firstAttribute="leading" secondItem="DMo-1l-TTf" secondAttribute="leading" id="liO-fC-0jy"/>
+                                    <constraint firstItem="bhT-2A-tzH" firstAttribute="top" secondItem="DMo-1l-TTf" secondAttribute="top" constant="28" id="xpL-cU-VD7"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueDrums" translatesAutoresizingMaskIntoConstraints="NO" id="Oz9-Yu-MPz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="GnL-fK-qAv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DMo-1l-TTf" firstAttribute="top" secondItem="cjw-2v-Pyg" secondAttribute="top" id="68e-HG-Tal"/>
+                            <constraint firstItem="Oz9-Yu-MPz" firstAttribute="leading" secondItem="cjw-2v-Pyg" secondAttribute="leading" id="6NN-xP-buB"/>
+                            <constraint firstItem="Oz9-Yu-MPz" firstAttribute="top" secondItem="DMo-1l-TTf" secondAttribute="bottom" id="CBx-eA-vjb"/>
+                            <constraint firstAttribute="trailing" secondItem="Oz9-Yu-MPz" secondAttribute="trailing" id="cEM-JQ-zr8"/>
+                            <constraint firstAttribute="trailing" secondItem="DMo-1l-TTf" secondAttribute="trailing" id="slK-Ki-Y4K"/>
+                            <constraint firstItem="DMo-1l-TTf" firstAttribute="leading" secondItem="cjw-2v-Pyg" secondAttribute="leading" id="tXP-Jf-5gp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXO-vu-x9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueDrums" width="4585" height="3057"/>
+    </resources>
+</document>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DiscographyVC-->
+        <scene sceneID="5tY-Bq-3cv">
+            <objects>
+                <viewController storyboardIdentifier="discographyVC" id="zjI-mA-be1" userLabel="DiscographyVC" customClass="DiscographyVC" customModule="TheBlueStones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vwf-jK-82O"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pwl-13-vyI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZlN-Pe-x6T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHe-S8-aLb">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discography" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqB-Ay-IPX">
+                                        <frame key="frameInset" minX="132" minY="25" width="111" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ol3-bM-Ycr">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="od0-1Y-dRz"/>
+                                            <constraint firstAttribute="width" constant="52" id="oub-pz-TRo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.037376623560252856" green="0.21002321582306965" blue="0.65823317309999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="zjI-mA-be1" eventType="touchUpInside" id="226-l1-XYS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ol3-bM-Ycr" firstAttribute="top" secondItem="MHe-S8-aLb" secondAttribute="top" constant="23" id="1P9-eO-5DG"/>
+                                    <constraint firstAttribute="height" constant="58" id="Ijq-R6-ylL"/>
+                                    <constraint firstItem="Ol3-bM-Ycr" firstAttribute="leading" secondItem="MHe-S8-aLb" secondAttribute="leading" constant="8" id="JtP-rb-Fof"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ol3-bM-Ycr" secondAttribute="bottom" constant="2" id="PP4-Dh-iMa"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluesBand" translatesAutoresizingMaskIntoConstraints="NO" id="jca-gi-cfi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="hZj-nl-tpi"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="280" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KEl-kr-rGE">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DiscographyCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscographyCell" rowHeight="280" id="36o-Vg-vST" customClass="DiscographyCell" customModule="TheBlueStones" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="280"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="36o-Vg-vST" id="5Nt-3i-Nb6">
+                                            <frame key="frameInset" width="375" height="279"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueTie" translatesAutoresizingMaskIntoConstraints="NO" id="psU-p2-2Mr">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="10K-5m-NdL"/>
+                                                        <constraint firstAttribute="height" constant="50" id="LMu-1e-PGz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Blue Stones EP" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbp-q2-DNg">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="XNk-xC-Nlk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A42-Mx-tI4">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="288" id="jLC-pP-01Z"/>
+                                                    </constraints>
+                                                    <string key="text">1. I'm a Stereo
+2. Frozen Heart
+3. Saw Mill
+4. Tire Tracks
+5. All I Ever
+6. Shiny Dimonds
+7. 
+8.
+9.	</string>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="psU-p2-2Mr" firstAttribute="leading" secondItem="5Nt-3i-Nb6" secondAttribute="leadingMargin" id="4fk-cO-joQ"/>
+                                                <constraint firstItem="Tbp-q2-DNg" firstAttribute="top" secondItem="5Nt-3i-Nb6" secondAttribute="topMargin" constant="15" id="7rk-PH-wjM"/>
+                                                <constraint firstItem="A42-Mx-tI4" firstAttribute="top" secondItem="Tbp-q2-DNg" secondAttribute="bottom" constant="8" id="9ra-gE-mKm"/>
+                                                <constraint firstItem="Tbp-q2-DNg" firstAttribute="leading" secondItem="psU-p2-2Mr" secondAttribute="trailing" constant="8" id="OYU-Kl-oBM"/>
+                                                <constraint firstItem="A42-Mx-tI4" firstAttribute="trailing" secondItem="5Nt-3i-Nb6" secondAttribute="trailingMargin" id="Psm-o0-7ev"/>
+                                                <constraint firstItem="A42-Mx-tI4" firstAttribute="leading" secondItem="psU-p2-2Mr" secondAttribute="trailing" constant="8" id="WlF-dp-Gxg"/>
+                                                <constraint firstItem="psU-p2-2Mr" firstAttribute="top" secondItem="5Nt-3i-Nb6" secondAttribute="topMargin" id="bH8-QX-H0R"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Tbp-q2-DNg" secondAttribute="trailing" constant="10" id="xn9-ga-mDH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="albumImg" destination="psU-p2-2Mr" id="hQX-PF-xEw"/>
+                                            <outlet property="albumTitleLbl" destination="Tbp-q2-DNg" id="fnI-ws-5QH"/>
+                                            <outlet property="discographyTextView" destination="A42-Mx-tI4" id="Lvp-RV-kQY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KEl-kr-rGE" secondAttribute="trailing" id="681-Bt-kcJ"/>
+                            <constraint firstAttribute="trailing" secondItem="jca-gi-cfi" secondAttribute="trailing" id="FZg-cT-X9u"/>
+                            <constraint firstItem="MHe-S8-aLb" firstAttribute="leading" secondItem="ZlN-Pe-x6T" secondAttribute="leading" id="IOq-OQ-Kfr"/>
+                            <constraint firstItem="KEl-kr-rGE" firstAttribute="leading" secondItem="ZlN-Pe-x6T" secondAttribute="leading" id="R2p-cs-efE"/>
+                            <constraint firstItem="jca-gi-cfi" firstAttribute="leading" secondItem="ZlN-Pe-x6T" secondAttribute="leading" id="S7Z-TR-Vup"/>
+                            <constraint firstItem="Pwl-13-vyI" firstAttribute="top" secondItem="KEl-kr-rGE" secondAttribute="bottom" id="gDz-7P-gfl"/>
+                            <constraint firstAttribute="trailing" secondItem="MHe-S8-aLb" secondAttribute="trailing" id="gwv-a9-hl1"/>
+                            <constraint firstItem="jca-gi-cfi" firstAttribute="top" secondItem="MHe-S8-aLb" secondAttribute="bottom" id="kkR-4d-aFD"/>
+                            <constraint firstItem="KEl-kr-rGE" firstAttribute="top" secondItem="jca-gi-cfi" secondAttribute="bottom" id="t10-or-PWb"/>
+                            <constraint firstItem="MHe-S8-aLb" firstAttribute="top" secondItem="ZlN-Pe-x6T" secondAttribute="top" id="vlS-0i-G7y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="KEl-kr-rGE" id="mei-5U-Yfn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0c-dn-5Pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="98.50074962518741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlueTie" width="241" height="209"/>
+        <image name="bluesBand" width="1020" height="574"/>
+    </resources>
+</document>

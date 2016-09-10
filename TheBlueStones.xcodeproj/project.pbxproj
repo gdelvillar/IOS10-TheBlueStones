@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0BF6A51D83937900AC66FB /* EventsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0BF6A41D83937900AC66FB /* EventsVC.storyboard */; };
+		0A0BF6A71D83940200AC66FB /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0BF6A61D83940200AC66FB /* EventsVC.swift */; };
+		0A6000751D83327000FF12C5 /* TopSongsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6000741D83327000FF12C5 /* TopSongsVC.storyboard */; };
+		0A6000771D8335B300FF12C5 /* TopSongsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6000761D8335B300FF12C5 /* TopSongsVC.swift */; };
+		0A6000791D833D6B00FF12C5 /* TopSongsCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6000781D833D6B00FF12C5 /* TopSongsCellInfo.swift */; };
+		0A60007B1D833DA500FF12C5 /* TopSongsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A60007A1D833DA500FF12C5 /* TopSongsCell.swift */; };
+		0A679E5E1D82300400350A57 /* DiscographyCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A679E5D1D82300400350A57 /* DiscographyCellInfo.swift */; };
 		0AC4990A1D8126AE00882421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC499091D8126AE00882421 /* AppDelegate.swift */; };
-		0AC4990C1D8126AE00882421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC4990B1D8126AE00882421 /* ViewController.swift */; };
+		0AC4990C1D8126AE00882421 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC4990B1D8126AE00882421 /* MainVC.swift */; };
 		0AC4990F1D8126AE00882421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC4990D1D8126AE00882421 /* Main.storyboard */; };
 		0AC499111D8126AE00882421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC499101D8126AE00882421 /* Assets.xcassets */; };
 		0AC499141D8126AE00882421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC499121D8126AE00882421 /* LaunchScreen.storyboard */; };
+		0AC499211D812CF100882421 /* DiscographyVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC499201D812CF100882421 /* DiscographyVC.storyboard */; };
+		0AC499231D812D8100882421 /* DiscographyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC499221D812D8100882421 /* DiscographyVC.swift */; };
+		0AC499251D81386800882421 /* DiscographyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC499241D81386800882421 /* DiscographyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0BF6A41D83937900AC66FB /* EventsVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventsVC.storyboard; sourceTree = "<group>"; };
+		0A0BF6A61D83940200AC66FB /* EventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		0A6000741D83327000FF12C5 /* TopSongsVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopSongsVC.storyboard; sourceTree = "<group>"; };
+		0A6000761D8335B300FF12C5 /* TopSongsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSongsVC.swift; sourceTree = "<group>"; };
+		0A6000781D833D6B00FF12C5 /* TopSongsCellInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSongsCellInfo.swift; sourceTree = "<group>"; };
+		0A60007A1D833DA500FF12C5 /* TopSongsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSongsCell.swift; sourceTree = "<group>"; };
+		0A679E5D1D82300400350A57 /* DiscographyCellInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscographyCellInfo.swift; sourceTree = "<group>"; };
 		0AC499061D8126AE00882421 /* TheBlueStones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBlueStones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC499091D8126AE00882421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AC4990B1D8126AE00882421 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AC4990B1D8126AE00882421 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0AC4990E1D8126AE00882421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AC499101D8126AE00882421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AC499131D8126AE00882421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AC499151D8126AE00882421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC499201D812CF100882421 /* DiscographyVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DiscographyVC.storyboard; sourceTree = "<group>"; };
+		0AC499221D812D8100882421 /* DiscographyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscographyVC.swift; sourceTree = "<group>"; };
+		0AC499241D81386800882421 /* DiscographyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscographyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +74,48 @@
 		0AC499081D8126AE00882421 /* TheBlueStones */ = {
 			isa = PBXGroup;
 			children = (
+				0AC4991D1D8126C200882421 /* Controller */,
+				0AC4991C1D8126BC00882421 /* View */,
+				0AC4991B1D8126B700882421 /* Model */,
 				0AC499091D8126AE00882421 /* AppDelegate.swift */,
-				0AC4990B1D8126AE00882421 /* ViewController.swift */,
 				0AC4990D1D8126AE00882421 /* Main.storyboard */,
 				0AC499101D8126AE00882421 /* Assets.xcassets */,
 				0AC499121D8126AE00882421 /* LaunchScreen.storyboard */,
 				0AC499151D8126AE00882421 /* Info.plist */,
 			);
 			path = TheBlueStones;
+			sourceTree = "<group>";
+		};
+		0AC4991B1D8126B700882421 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A679E5D1D82300400350A57 /* DiscographyCellInfo.swift */,
+				0A6000781D833D6B00FF12C5 /* TopSongsCellInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0AC4991C1D8126BC00882421 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0AC499201D812CF100882421 /* DiscographyVC.storyboard */,
+				0A6000741D83327000FF12C5 /* TopSongsVC.storyboard */,
+				0A0BF6A41D83937900AC66FB /* EventsVC.storyboard */,
+				0A60007A1D833DA500FF12C5 /* TopSongsCell.swift */,
+				0AC499241D81386800882421 /* DiscographyCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0AC4991D1D8126C200882421 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0AC4990B1D8126AE00882421 /* MainVC.swift */,
+				0AC499221D812D8100882421 /* DiscographyVC.swift */,
+				0A6000761D8335B300FF12C5 /* TopSongsVC.swift */,
+				0A0BF6A61D83940200AC66FB /* EventsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +178,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0BF6A51D83937900AC66FB /* EventsVC.storyboard in Resources */,
 				0AC499141D8126AE00882421 /* LaunchScreen.storyboard in Resources */,
+				0A6000751D83327000FF12C5 /* TopSongsVC.storyboard in Resources */,
 				0AC499111D8126AE00882421 /* Assets.xcassets in Resources */,
 				0AC4990F1D8126AE00882421 /* Main.storyboard in Resources */,
+				0AC499211D812CF100882421 /* DiscographyVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AC4990C1D8126AE00882421 /* ViewController.swift in Sources */,
+				0A6000791D833D6B00FF12C5 /* TopSongsCellInfo.swift in Sources */,
+				0AC499231D812D8100882421 /* DiscographyVC.swift in Sources */,
+				0A60007B1D833DA500FF12C5 /* TopSongsCell.swift in Sources */,
+				0AC4990C1D8126AE00882421 /* MainVC.swift in Sources */,
+				0AC499251D81386800882421 /* DiscographyCell.swift in Sources */,
+				0A0BF6A71D83940200AC66FB /* EventsVC.swift in Sources */,
+				0A6000771D8335B300FF12C5 /* TopSongsVC.swift in Sources */,
+				0A679E5E1D82300400350A57 /* DiscographyCellInfo.swift in Sources */,
 				0AC4990A1D8126AE00882421 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +366,7 @@
 				0AC4991A1D8126AE00882421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

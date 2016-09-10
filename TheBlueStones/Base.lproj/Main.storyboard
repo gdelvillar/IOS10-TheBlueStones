@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="TheBlueStones" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,135 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-Ho-aRT">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="KVO-Pb-UnB">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDF-3j-g9P">
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Top Songs">
+                                                    <color key="titleColor" red="0.064308082674941869" green="0.25087627932359369" blue="0.62756410258717943" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="topSongsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uzw-nW-vep"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-N4-oQc">
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Discography">
+                                                    <color key="titleColor" red="0.060701427246707775" green="0.23680613048691901" blue="0.59236778848461535" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="discographyBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S0p-D8-UIh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKG-pX-VFh">
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Events">
+                                                    <color key="titleColor" red="0.051236266072124781" green="0.19988099884086558" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eventsBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTC-ze-nf1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="pVQ-Nw-GtF"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KVO-Pb-UnB" firstAttribute="top" secondItem="PBU-Ho-aRT" secondAttribute="top" constant="22" id="1Pc-uH-m3a"/>
+                                    <constraint firstItem="KVO-Pb-UnB" firstAttribute="leading" secondItem="PBU-Ho-aRT" secondAttribute="leading" constant="8" id="U1J-jT-xy3"/>
+                                    <constraint firstAttribute="trailing" secondItem="KVO-Pb-UnB" secondAttribute="trailing" constant="-3" id="VfJ-IG-kWo"/>
+                                    <constraint firstAttribute="height" constant="58" id="d8c-G5-b95"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheBlueStones" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-aD-kar">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="zHg-Vc-Qaj"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iK-v8-JCb">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VUf-So-CVW">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSn-PF-oPT">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="TRY-QG-uPz"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Tyk-6l-Q1n"/>
+                                                </constraints>
+                                                <state key="normal" image="Spotify_Icon_RGB_Green"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnh-Dn-cgQ">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="HWr-Mo-C5E"/>
+                                                    <constraint firstAttribute="height" constant="40" id="t3K-Kv-Spq"/>
+                                                </constraints>
+                                                <state key="normal" image="Twitter_Logo_Blue"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PK7-sy-3g1">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="PGY-x0-Si1"/>
+                                                    <constraint firstAttribute="width" constant="40" id="U42-as-NOh"/>
+                                                </constraints>
+                                                <state key="normal" image="FB-f-Logo__blue_50"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="mfc-vn-BKA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VUf-So-CVW" firstAttribute="leading" secondItem="1iK-v8-JCb" secondAttribute="leading" constant="77" id="DYW-PX-Rft"/>
+                                    <constraint firstAttribute="bottom" secondItem="VUf-So-CVW" secondAttribute="bottom" constant="5" id="FQP-yt-752"/>
+                                    <constraint firstAttribute="height" constant="50" id="P1L-p5-baN"/>
+                                    <constraint firstItem="VUf-So-CVW" firstAttribute="top" secondItem="1iK-v8-JCb" secondAttribute="top" constant="5" id="nXy-fb-Ts3"/>
+                                    <constraint firstAttribute="trailing" secondItem="VUf-So-CVW" secondAttribute="trailing" constant="78" id="zl4-37-gpu"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="igl-6a-r2s">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">From Windsor, Ontario, Canada; the duo is built on an electrifying blues-rock sound with alternative rock accents. They have been praised for their big and bold live performances, and have been featured on TV shows such as Suits, Parks and Rec, Battle Creek and Monday Night Football. They've opened for acts such as Justin Nozuka, Fitz and The Tantrums, Big Sugar and more.</string>
+                                <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PBU-Ho-aRT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2QW-p6-zww"/>
+                            <constraint firstAttribute="trailing" secondItem="igl-6a-r2s" secondAttribute="trailing" id="42g-6e-0wa"/>
+                            <constraint firstItem="igl-6a-r2s" firstAttribute="top" secondItem="1iK-v8-JCb" secondAttribute="bottom" constant="8" id="84q-8L-j4O"/>
+                            <constraint firstAttribute="trailing" secondItem="PBU-Ho-aRT" secondAttribute="trailing" id="F2q-Se-KUP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="igl-6a-r2s" secondAttribute="bottom" id="OoQ-fO-tCP"/>
+                            <constraint firstItem="1iK-v8-JCb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pvh-HC-chV"/>
+                            <constraint firstItem="RkA-aD-kar" firstAttribute="top" secondItem="PBU-Ho-aRT" secondAttribute="bottom" id="bi0-QT-U54"/>
+                            <constraint firstItem="igl-6a-r2s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dhh-nv-8a9"/>
+                            <constraint firstAttribute="trailing" secondItem="1iK-v8-JCb" secondAttribute="trailing" id="egE-cI-XqM"/>
+                            <constraint firstItem="PBU-Ho-aRT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fKB-oe-vNU"/>
+                            <constraint firstItem="RkA-aD-kar" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gih-aB-2G6"/>
+                            <constraint firstAttribute="trailing" secondItem="RkA-aD-kar" secondAttribute="trailing" id="jWZ-AC-mPW"/>
+                            <constraint firstItem="1iK-v8-JCb" firstAttribute="top" secondItem="PBU-Ho-aRT" secondAttribute="bottom" constant="177" id="t5B-U6-vBy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="discographyBtn" destination="5Ah-N4-oQc" id="DEA-pU-9p4"/>
+                        <outlet property="eventsBtn" destination="NKG-pX-VFh" id="XAM-My-RXY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FB-f-Logo__blue_50" width="50" height="50"/>
+        <image name="Spotify_Icon_RGB_Green" width="709" height="709"/>
+        <image name="TheBlueStones" width="800" height="800"/>
+        <image name="Twitter_Logo_Blue" width="400" height="400"/>
+    </resources>
 </document>
